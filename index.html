@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akshat Shah - Amazon Resume</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="amazon-logo"><img src="amazon-logo.png" alt="Amazon logo"></div>
+        <div class="search-bar"><input type="text" placeholder="top talent"></div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#" onclick="showPopup('about-popup')">About</a>
+            <a href="#" onclick="showPopup('skills-popup')">Skills</a>
+            <a href="https://github.com/Akz27" target="_blank">Projects</a>
+            <a href="#" onclick="showPopup('contact-popup')">Contact</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="product">
+            <div class="image">
+                <img src="akshat.jpg" alt="Akshat Shah">
+                <img src="cv.png" alt="Scan to view CV" class="qr-code">
+            </div>
+            <div class="details">
+                <h1>Akshat Shah - Web Developer</h1>
+                <p class="price">₹0.00 <span class="free"> (Limited Time Offer: Free for Recruiters) </span></p>
+                <p><strong>Category:</strong> Multi-Talented Tech Enthusiast</p>
+                <p><strong>Stock:</strong> Available for Internships & Job Offers ✅</p>
+                <p><strong>Estimated Delivery:</strong> Immediate Hire Possible 📦</p>
+
+                <h3>Key Features:</h3>
+                <ul>
+                    <li>🎓 Pursuing BTech (Information Technology) at NMIMS</li>
+                    <li>💻 Skilled in Python, Java, C++, Web Development</li>
+                    <li>📊 Interested in Web dev, Data analysis, DBMS</li>
+                    <li>⚡ Passionate about Problem-Solving & Innovation</li>
+                </ul>
+
+                <button id="add-to-cart">🛒 Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="product-description">
+            <h2>Product Description</h2>
+            <p>Akshat Shah is a passionate Information Technology student at NMIMS, skilled in Python, Java, C++, and Web Development. An organized and dependable professional with strong problem-solving and leadership skills, he thrives on innovation and teamwork. Eager to take on new challenges, he seeks opportunities to contribute effectively and drive meaningful results.</p>
+            
+            <h3>Technical Specifications</h3>
+            <table>
+                <tr>
+                    <td><strong>Programming Languages</strong></td>
+                    <td>Python, Java, HTML, C++, C#, SQL, JavaScript</td>
+                </tr>
+                <tr>
+                    <td><strong>Frameworks & Tools</strong></td>
+                    <td>React, Node.js, Django, MySQL, Firebase</td>
+                </tr>
+                <tr>
+                    <td><strong>Soft Skills</strong></td>
+                    <td>Communication, Leadership, Critical Thinking</td>
+                </tr>
+                <tr>
+                    <td><strong>Certifications</strong></td>
+                    <td>Machine Learning, Cloud Computing</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="ratings">
+            <h2>Customer Ratings</h2>
+            <p>⭐⭐⭐⭐⭐ Technical Skills (5.0)</p>
+            <p>⭐⭐⭐⭐⭐ Problem Solving (5.0)</p>
+            <p>⭐⭐⭐⭐☆ Communication (4)</p>
+            <p>⭐⭐⭐⭐☆ Financial Knowledge (4)</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2025 Akshat Shah | Connect with me: 
+            <a href="http://www.linkedin.com/in/akshat-shah-937418263">LinkedIn</a>
+        </p>
+    </footer>
+
+    <div id="cart-popup" class="popup">
+        <p>✅ Akshat Shah has been added to your hiring cart!</p>
+        <p>📩 Contact via <a href="http://www.linkedin.com/in/akshat-shah-937418263" target="_blank">LinkedIn</a></p>
+        <button onclick="closePopup('cart-popup')">Close</button>
+    </div>
+
+    <div id="about-popup" class="popup">
+        <div class="popup-content">
+            <h2>About Me</h2>
+            <p>I'm Akshat Shah, a BTech (Information Technology) student at NMIMS with strong problem-solving abilities and leadership skills. </p>
+            <p>Skilled in Python, Java, C++, and Web Development, I'm passionate about Web Development and Data Analysis.</p>
+            <p>An organized and dependable professional, I thrive in team environments and seek a full-time role that offers professional challenges, allowing me to contribute effectively and drive meaningful results.</p>
+            <button onclick="closePopup('about-popup')">Close</button>
+        </div>
+    </div>
+
+    <div id="skills-popup" class="popup">
+        <div class="popup-content">
+            <h2>Skills</h2>
+            <ul>
+                <li>Programming: Python, Java, HTML, C++, C#, SQL, JavaScript</li>
+                <li>Frameworks: React, Node.js, Django, MySQL</li>
+                <li>Soft Skills: Leadership, Critical Thinking, Communication</li>
+            </ul>
+            <button onclick="closePopup('skills-popup')">Close</button>
+        </div>
+    </div>
+
+    <div id="contact-popup" class="popup">
+        <div class="popup-content">
+            <h2>Contact Me</h2>
+            <p>Email: akshatshah0027@gmail.com</p>
+            <p>Phone: +91 9757257282</p>
+            <p>LinkedIn: <a href="http://www.linkedin.com/in/akshat-shah-937418263" target="_blank">linkedin.com/in/akshat-shah</a></p>
+            <button onclick="closePopup('contact-popup')">Close</button>
+        </div>
+    </div>
+</body>
+</html>
